@@ -112,10 +112,32 @@
                     "</div>"+
                     "<br>"+
                     "<br>"+
-                    "<br>"+
                     "<br>"
             );
+            %>
 
+        <div class="form-group">
+            <label for="exampleSelect1">Puntua el Restaurant</label>
+            <select class="form-control" id="exampleSelect1">
+                <option>1♥</option>
+                <option>2♥</option>
+                <option>3♥</option>
+                <option>4♥</option>
+                <option>5♥</option>
+                <option>6♥</option>
+                <option>7♥</option>
+                <option>8♥</option>
+                <option>9♥</option>
+                <option>10♥</option>
+            </select>
+            <label for="exampleTextarea">Escriu el teu comentari aquí</label>
+            <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+            <button type="button" class="btn btn-info">Envia</button>
+        </div>
+        <br>
+        <br>
+
+            <%
             //Per mostrar els comentaris
             DBHelper dbHelper = new DBHelper();
             List<Comments> arrayComments = dbHelper.getComments(request.getParameter("id"));
@@ -155,6 +177,7 @@
             }
 
         %>
+
 
 
     </div>
