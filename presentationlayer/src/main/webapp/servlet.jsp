@@ -117,6 +117,7 @@
             %>
 
         <div class="form-group">
+            <form action="comentari" method="POST">
             <label for="exampleSelect1">Puntua el Restaurant</label>
             <select class="form-control" id="exampleSelect1">
                 <option>1♥</option>
@@ -133,6 +134,7 @@
             <label for="exampleTextarea">Escriu el teu comentari aquí</label>
             <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
             <button type="button" class="btn btn-info">Envia</button>
+            </form>
         </div>
         <br>
         <br>
